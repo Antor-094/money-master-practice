@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+       
+    <section>
+        <h1 class="text-3xl text-center font-bold mb-6">Money Master</h1>
+        <div class="grid grid-cols-2 items-center gap-5">
+        <div class="w-full h-screen">
+            <img class=" w-[full] h-[85%] ml-auto" src="images/money.png" alt="">
+        </div>
+        <div class="h-[80%]">
+            <div class="w-[80%] text-center ">
+                <div>
+                    <h2 class="my-5 font-semibold" >Income</h2>
+                   <div> Income : <input required id="income-input" class="bg-stone-200" type="number"></div>
+                </div>
+                <div>
+                    <h2 class="my-4 font-semibold">Expenses</h2>
+                    <div >food : <input id="food-input" class="bg-stone-200" type="number" ></div>
+                   <div  class="my-3"> rent : <input required id="rent-input" class="bg-stone-200" type="number"></div>
+                    <div >cloths : <input required id="cloth-input" class="bg-stone-200" type="number"></div>
+                    <button id="btn-calculate" class="my-4 bg-blue-500 py-2 px-4 rounded-md text-white">Calculate</button>
+                </div>
+                <div>
+                    <h2 class="font-semibold">total Expenses : <span id="total-expense"></span></h2>
+                    <h2 class="my-5 font-semibold">Balance : <span id="balance-rem"></span></h2>
+                </div>
+                <div>
+                    save : <input id="save-input" required class="bg-stone-200 w-[100px]" type="number"> % <button id="btn-save" class="ml-5 bg-blue-500 py-2 px-4 rounded-md text-white">Save</button>
+                    <h2 class="my-5 font-semibold" id="">Saving amount : <span id="saving-amount"></span></h2>
+                    <h2 class="font-semibold" >Remaining Balance : <span id="rem-balance"></span></h2>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
